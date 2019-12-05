@@ -6,4 +6,4 @@ VOLUME /etc/ssl
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 RUN chown -R nginx /etc/nginx
-RUN chown -R nginx /etc/ss
+RUN chown -R nginx /etc/ssl
