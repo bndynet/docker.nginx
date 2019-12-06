@@ -1,8 +1,5 @@
-FROM nginx:1.9.7
+FROM nginx
 
-EXPOSE 80
-EXPOSE 443
 VOLUME /etc/ssl
 
-RUN chown -R nginx /etc/nginx
-RUN chown -R nginx /etc/ssl
+COPY ./default.conf /etc/nginx/conf.d/default.conf
