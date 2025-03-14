@@ -1,5 +1,3 @@
-FROM nginx
-
-VOLUME /etc/ssl
+FROM nginx:latest
 
 COPY ./default.conf /etc/nginx/conf.d/default.conf
